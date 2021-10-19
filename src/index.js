@@ -20,8 +20,7 @@ const theme = createTheme({
   typography: {
     fontFamily: "Spartan",
     h1: {
-      fontSize: "64px",
-      color: "#17192b",
+      fontSize: "34px",
       "@media (min-width:600px)": {
         fontSize: "72px",
       },
@@ -29,17 +28,14 @@ const theme = createTheme({
     h2: {
       fontSize: "40px",
       fontWeight: 600,
-      color: "#242b37",
       "@media (min-width:600px)": {
         fontSize: "56px",
       },
     },
     h3: {
-      color: "#4c4c4c",
       fontSize: "14px",
       textTransform: "uppercase",
       "@media (min-width:600px)": {
-        color: "#17192b",
         fontWeight: 600,
         textTransform: "none",
         fontSize: "28px",
@@ -53,9 +49,7 @@ const theme = createTheme({
     },
     body2: {
       fontSize: "15px",
-      color: "#242b37",
       "@media (min-width:600px)": {
-        color: "#17192b",
         fontSize: "28px",
       },
     },

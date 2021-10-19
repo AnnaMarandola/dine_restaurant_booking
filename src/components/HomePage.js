@@ -1,5 +1,5 @@
-import { Typography } from "@mui/material";
 import { withStyles } from "@mui/styles";
+import Hero from "./Hero";
 
 const styles = (theme) => ({
   root: {
@@ -10,11 +10,7 @@ const styles = (theme) => ({
 const HomePage = ({ classes }) => {
   return (
     <div className={classes.root}>
-      <Typography variant="h1">Hello</Typography>
-      <Typography variant="h2">Hello</Typography>
-      <Typography variant="h3">Hello</Typography>
-      <Typography variant="body1">Hello</Typography>
-      <Typography variant="body2">Hello</Typography>
+    <Hero />
     </div>
   );
 };
