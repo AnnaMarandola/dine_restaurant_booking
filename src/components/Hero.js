@@ -19,8 +19,9 @@ const styles = (theme) => ({
     height: "14rem",
     [theme.breakpoints.up("sm")]: {
       backgroundImage: `url(${TABLETHERO})`,
+      height: "20rem",
     },
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("md")]: {
       backgroundImage: `url(${DESKTOPHERO})`,
     },
   },
@@ -33,9 +34,15 @@ const styles = (theme) => ({
   },
   dine: {
       padding: "1rem",
+      [theme.breakpoints.up("sm")]: {
+        paddingBottom: "1.5rem"
+      },
   },
   subtitle: {
-      paddingBottom: "0.5rem"
+      paddingBottom: "0.5rem",
+      [theme.breakpoints.up("sm")]: {
+        paddingBottom: "1.5rem"
+      }
   },
   text: {
       padding: "1rem"
@@ -51,7 +58,13 @@ const styles = (theme) => ({
       "&:hover": {
         color: theme.palette.secondary.mirage,
         backgroundColor: "white"
+      },
+      [theme.breakpoints.up("sm")]: {
+        padding: "1.5rem 3rem",
+        marginTop: "1rem",
+
       }
+
   }
 });
 

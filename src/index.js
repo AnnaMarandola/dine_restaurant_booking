@@ -22,6 +22,9 @@ const theme = createTheme({
     h1: {
       fontSize: "34px",
       "@media (min-width:600px)": {
+        fontSize: "50px",
+      },
+      "@media (min-width:900px)": {
         fontSize: "72px",
       },
     },
@@ -50,8 +53,12 @@ const theme = createTheme({
     body2: {
       fontSize: "15px",
       "@media (min-width:600px)": {
+        fontSize: "20px",
+      },
+      "@media (min-width:900px)": {
         fontSize: "28px",
       },
+
     },
   },
 });
