@@ -3,6 +3,7 @@ import { withStyles } from "@mui/styles";
 import MOBILEHERO from "../assets/homepage/hero-bg-mobile.jpg";
 import TABLETHERO from "../assets/homepage/hero-bg-tablet.jpg";
 import DESKTOPHERO from "../assets/homepage/hero-bg-desktop.jpg";
+import { NavLink } from "react-router-dom";
 
 const styles = (theme) => ({
   root: {
@@ -75,7 +76,7 @@ const styles = (theme) => ({
     [theme.breakpoints.up("md")]: {
       width: "40rem",
       padding: "1rem 0 3rem 0",
-    },   
+    },
   },
   bookingButton: {
     color: "white",
@@ -114,7 +115,9 @@ const Hero = ({ classes }) => {
           Experience our seasonal menu in beautiful country surroundings. Eat
           the freshest produce from the comfort of our farmhouse.
         </Typography>
-        <button className={classes.bookingButton}>Book a table</button>
+        <NavLink to="/booking">
+          <button className={classes.bookingButton}>Book a table</button>
+        </NavLink>
       </div>
       <div className={classes.pictureContainer} />
     </div>
