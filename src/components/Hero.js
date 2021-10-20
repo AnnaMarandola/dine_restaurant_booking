@@ -11,16 +11,16 @@ const styles = (theme) => ({
     flexDirection: "column-reverse",
     backgroundColor: theme.palette.primary.main,
     [theme.breakpoints.up("sm")]: {
-      flexDirection: "row",
-      height: "20rem",
+      height: "70rem",
+      paddingBottom: "12rem",
     },
     [theme.breakpoints.up("md")]: {
+      flexDirection: "row",
       height: "55rem",
-
     },
     [theme.breakpoints.up("lg")]: {
+      height: "55rem",
     },
-
   },
   pictureContainer: {
     backgroundImage: `url(${MOBILEHERO})`,
@@ -28,10 +28,10 @@ const styles = (theme) => ({
     backgroundPosition: "top",
     backgroundSize: "cover",
     width: "100%",
-    height: "14rem",
+    height: "20rem",
     [theme.breakpoints.up("sm")]: {
       backgroundImage: `url(${TABLETHERO})`,
-      height: "35rem",
+      height: "40rem",
     },
     [theme.breakpoints.up("md")]: {
       backgroundImage: `url(${DESKTOPHERO})`,
@@ -47,14 +47,17 @@ const styles = (theme) => ({
     height: "33rem",
     backgroundColor: theme.palette.primary.main,
     color: "#ffffff",
+    [theme.breakpoints.up("sm")]: {
+      padding: "2rem",
+      height: "44rem",
+    },
+
     [theme.breakpoints.up("md")]: {
       mixBlendMode: "difference",
       height: "55rem",
       padding: "3rem 0 0 12rem",
       textAlign: "left",
       width: "30rem",
-      // overflowX: "visible",
-      // zIndex: 1,
       [theme.breakpoints.up("lg")]: {
         width: "40rem",
         height: "55rem",
@@ -81,9 +84,13 @@ const styles = (theme) => ({
   },
   text: {
     padding: "1rem",
+    [theme.breakpoints.up("sm")]: {
+      padding: "1rem 5.5rem"
+    },
+
     [theme.breakpoints.up("md")]: {
       width: "40rem",
-      padding: "1rem 0 3rem 0",
+      padding: "1rem 0 4rem 0",
     },
   },
   bookingButton: {
@@ -92,20 +99,17 @@ const styles = (theme) => ({
     border: "1px solid white",
     backgroundColor: "transparent",
     padding: "1.3rem 3rem",
-    marginTop: "2rem",
+    margin: "2rem",
     textTransform: "uppercase",
     "&:hover": {
       color: theme.palette.secondary.mirage,
       backgroundColor: "white",
     },
     [theme.breakpoints.up("sm")]: {
-      padding: "1.5rem 1rem",
-      marginTop: "1rem",
-    },
-    [theme.breakpoints.up("md")]: {
       padding: "1.5rem 3rem",
       marginTop: "1rem",
     },
+    [theme.breakpoints.up("md")]: {},
   },
 });
 
