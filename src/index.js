@@ -25,6 +25,9 @@ const theme = createTheme({
         fontSize: "50px",
       },
       "@media (min-width:900px)": {
+        fontSize: "50px",
+      },
+      "@media (min-width:1100px)": {
         fontSize: "72px",
       },
     },
@@ -32,6 +35,12 @@ const theme = createTheme({
       fontSize: "40px",
       fontWeight: 600,
       "@media (min-width:600px)": {
+        fontSize: "45px",
+      },
+      "@media (min-width:900px)": {
+        fontSize: "50px",
+      },
+      "@media (min-width:1100px)": {
         fontSize: "56px",
       },
     },
@@ -56,6 +65,9 @@ const theme = createTheme({
         fontSize: "20px",
       },
       "@media (min-width:900px)": {
+        fontSize: "20px",
+      },
+      "@media (min-width:1100px)": {
         fontSize: "28px",
       },
 

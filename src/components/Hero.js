@@ -1,14 +1,17 @@
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { withStyles } from "@mui/styles";
 import MOBILEHERO from "../assets/homepage/hero-bg-mobile.jpg";
 import TABLETHERO from "../assets/homepage/hero-bg-tablet.jpg";
 import DESKTOPHERO from "../assets/homepage/hero-bg-desktop.jpg";
-import { palette } from "@mui/system";
 
 const styles = (theme) => ({
   root: {
     display: "flex",
     flexDirection: "column-reverse",
+    [theme.breakpoints.up("md")]: {
+      flexDirection: "row",
+      height: "0rem",
+    },
   },
   pictureContainer: {
     backgroundImage: `url(${MOBILEHERO})`,
@@ -23,49 +26,78 @@ const styles = (theme) => ({
     },
     [theme.breakpoints.up("md")]: {
       backgroundImage: `url(${DESKTOPHERO})`,
+      height: "55rem",
+      backgroundSize: "cover",
+    },
+    [theme.breakpoints.up("lg")]: {
+      backgroundPosition: "right",
     },
   },
   textContainer: {
     textAlign: "center",
     height: "35rem",
     backgroundColor: theme.palette.primary.main,
-    color: "#ffffff"
+    color: "#ffffff",
+    [theme.breakpoints.up("md")]: {
+      mixBlendMode: "difference",
 
+      height: "52rem",
+      padding: "3rem 0 0 12rem",
+      textAlign: "left",
+      width: "10rem",
+      overflowX: "visible",
+      zIndex: 1,
+      [theme.breakpoints.up("lg")]: {
+        width: "20rem",
+      },
+    },
   },
   dine: {
-      padding: "1rem",
-      [theme.breakpoints.up("sm")]: {
-        paddingBottom: "1.5rem"
-      },
+    padding: "1rem",
+    [theme.breakpoints.up("sm")]: {
+      paddingBottom: "1.5rem",
+    },
+    [theme.breakpoints.up("md")]: {
+      padding: "1rem 0 7rem 0",
+    },
   },
   subtitle: {
-      paddingBottom: "0.5rem",
-      [theme.breakpoints.up("sm")]: {
-        paddingBottom: "1.5rem"
-      }
+    paddingBottom: "0.5rem",
+    [theme.breakpoints.up("sm")]: {
+      paddingBottom: "1.5rem",
+    },
+    [theme.breakpoints.up("md")]: {
+      width: "40rem",
+    },
   },
   text: {
-      padding: "1rem"
+    padding: "1rem",
+    [theme.breakpoints.up("md")]: {
+      width: "40rem",
+      padding: "1rem 0 3rem 0",
+    },   
   },
   bookingButton: {
-      color: "white",
-      fontSize: "1rem",
-      border: "1px solid white",
-      backgroundColor: "transparent",
-      padding: "1rem 2rem",
-      marginTop: "2rem",
-      textTransform: "uppercase",
-      "&:hover": {
-        color: theme.palette.secondary.mirage,
-        backgroundColor: "white"
-      },
-      [theme.breakpoints.up("sm")]: {
-        padding: "1.5rem 3rem",
-        marginTop: "1rem",
-
-      }
-
-  }
+    color: "white",
+    fontSize: "1rem",
+    border: "1px solid white",
+    backgroundColor: "transparent",
+    padding: "1rem 2rem",
+    marginTop: "2rem",
+    textTransform: "uppercase",
+    "&:hover": {
+      color: theme.palette.secondary.mirage,
+      backgroundColor: "white",
+    },
+    [theme.breakpoints.up("sm")]: {
+      padding: "1.5rem 1rem",
+      marginTop: "1rem",
+    },
+    [theme.breakpoints.up("md")]: {
+      padding: "1.5rem 3rem",
+      marginTop: "1rem",
+    },
+  },
 });
 
 const Hero = ({ classes }) => {
