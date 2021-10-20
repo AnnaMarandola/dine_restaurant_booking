@@ -42,6 +42,11 @@ const styles = (theme) => ({
       top: "75%",
       width: "50%",
     },
+    [theme.breakpoints.up("md")]: {
+        left: "-20rem",
+       
+    },
+
   },
   photo: {
     backgroundImage: `url(${MOBILELANDSCAPE})`,
@@ -57,7 +62,7 @@ const styles = (theme) => ({
       width: "80%",
       zIndex: 2,
     },
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("lg")]: {
       backgroundImage: `url(${DESKTOPLANDSCAPE})`,
     },
   },

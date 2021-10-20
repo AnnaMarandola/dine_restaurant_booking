@@ -14,8 +14,12 @@ const styles = (theme) => ({
     alignItems: "center",
     padding: " 4rem 0",
     [theme.breakpoints.up("sm")]: {
-      backgroundColor: "pink",
-      height: "48rem",
+      height: "54rem",
+      paddingTop: "1rem",
+      paddingBottom: "8rem",
+    },
+    [theme.breakpoints.up("md")]: {
+      height: "64rem",
     },
   },
   photoContainer: {
@@ -43,7 +47,10 @@ const styles = (theme) => ({
       width: "80%",
       zIndex: 1,
     },
-    [theme.breakpoints.up("md")]: {
+    [theme.breakpoints.up("md")]: {},
+
+    [theme.breakpoints.up("lg")]: {
+      marginTop: "-5rem",
       backgroundImage: `url(${DESKTOPFOOD})`,
     },
   },
