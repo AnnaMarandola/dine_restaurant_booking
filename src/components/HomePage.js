@@ -1,16 +1,18 @@
 import { withStyles } from "@mui/styles";
+import EnjoyablePlace from "./EnjoyablePlace";
 import Hero from "./Hero";
+import LocalFood from "./LocalFood";
 
 const styles = (theme) => ({
-  root: {
-    backgroundColor: theme.palette.red,
-  },
+  root: {},
 });
 
 const HomePage = ({ classes }) => {
   return (
     <div className={classes.root}>
-    <Hero />
+      <Hero />
+      <EnjoyablePlace />
+      <LocalFood />
     </div>
   );
 };

@@ -9,10 +9,18 @@ const styles = (theme) => ({
   root: {
     display: "flex",
     flexDirection: "column-reverse",
-    [theme.breakpoints.up("md")]: {
+    backgroundColor: theme.palette.primary.main,
+    [theme.breakpoints.up("sm")]: {
       flexDirection: "row",
-      height: "0rem",
+      height: "20rem",
     },
+    [theme.breakpoints.up("md")]: {
+      height: "55rem",
+
+    },
+    [theme.breakpoints.up("lg")]: {
+    },
+
   },
   pictureContainer: {
     backgroundImage: `url(${MOBILEHERO})`,
@@ -23,7 +31,7 @@ const styles = (theme) => ({
     height: "14rem",
     [theme.breakpoints.up("sm")]: {
       backgroundImage: `url(${TABLETHERO})`,
-      height: "20rem",
+      height: "35rem",
     },
     [theme.breakpoints.up("md")]: {
       backgroundImage: `url(${DESKTOPHERO})`,
@@ -36,20 +44,20 @@ const styles = (theme) => ({
   },
   textContainer: {
     textAlign: "center",
-    height: "35rem",
+    height: "33rem",
     backgroundColor: theme.palette.primary.main,
     color: "#ffffff",
     [theme.breakpoints.up("md")]: {
       mixBlendMode: "difference",
-
-      height: "52rem",
+      height: "55rem",
       padding: "3rem 0 0 12rem",
       textAlign: "left",
-      width: "10rem",
-      overflowX: "visible",
-      zIndex: 1,
+      width: "30rem",
+      // overflowX: "visible",
+      // zIndex: 1,
       [theme.breakpoints.up("lg")]: {
-        width: "20rem",
+        width: "40rem",
+        height: "55rem",
       },
     },
   },
@@ -83,7 +91,7 @@ const styles = (theme) => ({
     fontSize: "1rem",
     border: "1px solid white",
     backgroundColor: "transparent",
-    padding: "1rem 2rem",
+    padding: "1.3rem 3rem",
     marginTop: "2rem",
     textTransform: "uppercase",
     "&:hover": {

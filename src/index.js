@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 
 const theme = createTheme({
   palette: {
@@ -32,8 +33,8 @@ const theme = createTheme({
       },
     },
     h2: {
-      fontSize: "40px",
-      fontWeight: 600,
+      fontSize: "30px",
+      fontWeight: 700,
       "@media (min-width:600px)": {
         fontSize: "45px",
       },
@@ -54,10 +55,17 @@ const theme = createTheme({
       },
     },
     body1: {
-      fontSize: "18px",
+      fontSize: "16px",
       "@media (min-width:600px)": {
+        fontSize: "22px",
+      },
+      "@media (min-width:900px)": {
+        fontSize: "25px",
+      },
+      "@media (min-width:1100px)": {
         fontSize: "30px",
       },
+
     },
     body2: {
       fontSize: "15px",
@@ -68,15 +76,15 @@ const theme = createTheme({
         fontSize: "20px",
       },
       "@media (min-width:1100px)": {
-        fontSize: "28px",
+        fontSize: "20px",
       },
-
     },
   },
 });
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
+    <CssBaseline />
     <App />
   </ThemeProvider>,
   document.getElementById("root")
