@@ -5,7 +5,7 @@ import LINES from "../assets/patterns/pattern-lines.svg";
 import MOBILEFOOD from "../assets/homepage/locally-sourced-mobile.jpg";
 import TABLETFOOD from "../assets/homepage/locally-sourced-tablet.jpg";
 import DESKTOPFOOD from "../assets/homepage/locally-sourced-desktop.jpg";
-
+import TOPLEFT  from "../assets/patterns/pattern-curve-top-left.svg";
 const styles = (theme) => ({
   root: {
     display: "flex",
@@ -19,7 +19,18 @@ const styles = (theme) => ({
       paddingBottom: "8rem",
     },
     [theme.breakpoints.up("md")]: {
-      height: "64rem",
+      flexDirection: "row-reverse",
+      height: "50rem",
+      backgroundImage: `url(${TOPLEFT})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "right center ",
+      backgroundSize: "cover 0%",
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "65rem",
+      width: "95%",
+      marginLeft: "5%"
+
     },
   },
   photoContainer: {
@@ -29,6 +40,9 @@ const styles = (theme) => ({
     width: "100%",
     height: "100%",
     [theme.breakpoints.up("sm")]: {
+      marginTop: "-5rem",
+    },
+    [theme.breakpoints.up("lg")]: {
       marginTop: "-5rem",
     },
   },
@@ -47,11 +61,13 @@ const styles = (theme) => ({
       width: "80%",
       zIndex: 1,
     },
-    [theme.breakpoints.up("md")]: {},
-
+    [theme.breakpoints.up("md")]: {
+      backgroundImage: `url(${DESKTOPFOOD})`,
+      boxShadow: "none",
+    },
     [theme.breakpoints.up("lg")]: {
       marginTop: "-5rem",
-      backgroundImage: `url(${DESKTOPFOOD})`,
+      width: "65%",
     },
   },
   textContainer: {
@@ -62,6 +78,11 @@ const styles = (theme) => ({
     [theme.breakpoints.up("sm")]: {
       width: "70%",
     },
+    [theme.breakpoints.up("md")]: {
+      marginTop: "-10rem",
+      textAlign: "left",
+      marginLeft: "4rem"
+  },
   },
   lines: {
     display: "none",
@@ -70,7 +91,7 @@ const styles = (theme) => ({
       display: "flex",
       zIndex: 2,
       position: "relative",
-      left: "35%",
+      left: "33%",
       top: "60%",
       width: "25%",
     },
@@ -79,6 +100,11 @@ const styles = (theme) => ({
     width: "30%",
     marginLeft: "35%",
     paddingBottom: "1rem",
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: 0,
+      paddingBottom: "5rem",
+      width: "20%",
+    }
   },
   title: {
     padding: "1rem 0 2rem 0",

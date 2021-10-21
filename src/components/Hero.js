@@ -85,7 +85,7 @@ const styles = (theme) => ({
   text: {
     padding: "1rem",
     [theme.breakpoints.up("sm")]: {
-      padding: "1rem 5.5rem"
+      padding: "1rem 5.5rem",
     },
 
     [theme.breakpoints.up("md")]: {
@@ -106,10 +106,12 @@ const styles = (theme) => ({
       backgroundColor: "white",
     },
     [theme.breakpoints.up("sm")]: {
-      padding: "1.5rem 3rem",
       marginTop: "1rem",
     },
-    [theme.breakpoints.up("md")]: {},
+    [theme.breakpoints.up("lg")]: {
+      padding: "1.5rem 5rem",
+      marginLeft: 0,
+    },
   },
 });
 

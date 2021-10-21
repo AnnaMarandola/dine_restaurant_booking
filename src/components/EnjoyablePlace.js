@@ -14,9 +14,18 @@ const styles = (theme) => ({
     alignItems: "center",
     paddingBottom: "2rem",
     [theme.breakpoints.up("sm")]: {
-      height: "50rem",
+      height: "55rem",
       paddingBottom: "4rem",
     },
+    [theme.breakpoints.up("md")]: {
+      flexDirection: "row",
+      height: "50rem",
+
+    },
+    [theme.breakpoints.up("lg")]: {
+      height: "60rem",
+      paddingBottom: 0,
+    }
   },
   photoContainer: {
       display: "flex",
@@ -26,7 +35,7 @@ const styles = (theme) => ({
       width: "100%",
       height: "100%",
     [theme.breakpoints.up("sm")]: {
-        marginTop: "-28rem",
+        marginTop: "-30rem",
     },
   },
   bgShape: {
@@ -43,9 +52,14 @@ const styles = (theme) => ({
       width: "50%",
     },
     [theme.breakpoints.up("md")]: {
-        left: "-20rem",
-       
+        left: "0rem",
+        top: "50%",
+        width: "120%",
+        height: "20rem"
     },
+    [theme.breakpoints.up("lg")]: {
+      top: "60%",
+  },
 
   },
   photo: {
@@ -62,8 +76,14 @@ const styles = (theme) => ({
       width: "80%",
       zIndex: 2,
     },
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("md")]: {
       backgroundImage: `url(${DESKTOPLANDSCAPE})`,
+      marginTop: "-5rem",
+      width: "70%"
+    },
+    [theme.breakpoints.up("lg")]: {
+      marginTop: "-12rem",
+      width: "65%"
     },
   },
   textContainer: {
@@ -74,11 +94,22 @@ const styles = (theme) => ({
     [theme.breakpoints.up("sm")]: {
         width: "70%"
     },
+    [theme.breakpoints.up("md")]: {
+      width: "70%",
+      marginTop: "-10rem",
+      textAlign: "left",
+      marginRight: "4rem"
+  },
   },
   divider: {
     width: "30%",
     marginLeft: "35%",
     paddingBottom: "1rem",
+    [theme.breakpoints.up("lg")]: {
+      marginLeft: 0,
+      paddingBottom: "5rem",
+      width: "20%",
+    }
   },
   title: {
     padding: "1rem 0 2rem 0",
