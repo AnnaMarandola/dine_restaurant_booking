@@ -57,26 +57,27 @@ const theme = createTheme({
     body1: {
       fontSize: "16px",
       "@media (min-width:600px)": {
-        fontSize: "22px",
-      },
-      "@media (min-width:900px)": {
-        fontSize: "22px",
-      },
-      // "@media (min-width:1200px)": {
-      //   fontSize: "30px",
-      // },
-
-    },
-    body2: {
-      fontSize: "15px",
-      "@media (min-width:600px)": {
         fontSize: "20px",
       },
       "@media (min-width:900px)": {
-        fontSize: "18px",
+        fontSize: "20px",
       },
       "@media (min-width:1200px)": {
         fontSize: "20px",
+      },
+
+    },
+    body2: {
+      fontSize: "18px",
+      fontWeight: 700,
+      "@media (min-width:600px)": {
+        fontSize: "22px",
+      },
+      "@media (min-width:900px)": {
+        fontSize: "22px",
+      },
+      "@media (min-width:1200px)": {
+        fontSize: "22px",
       },
     },
   },

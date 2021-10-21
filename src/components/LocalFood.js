@@ -5,7 +5,7 @@ import LINES from "../assets/patterns/pattern-lines.svg";
 import MOBILEFOOD from "../assets/homepage/locally-sourced-mobile.jpg";
 import TABLETFOOD from "../assets/homepage/locally-sourced-tablet.jpg";
 import DESKTOPFOOD from "../assets/homepage/locally-sourced-desktop.jpg";
-import TOPLEFT  from "../assets/patterns/pattern-curve-top-left.svg";
+import TOPLEFT from "../assets/patterns/pattern-curve-top-left.svg";
 const styles = (theme) => ({
   root: {
     display: "flex",
@@ -17,20 +17,22 @@ const styles = (theme) => ({
       height: "54rem",
       paddingTop: "1rem",
       paddingBottom: "8rem",
-    },
-    [theme.breakpoints.up("md")]: {
-      flexDirection: "row-reverse",
-      height: "50rem",
       backgroundImage: `url(${TOPLEFT})`,
       backgroundRepeat: "no-repeat",
-      backgroundPosition: "right center ",
+      backgroundPosition: "bottom left",
       backgroundSize: "cover 0%",
+    },
+    [theme.breakpoints.up("md")]: {
+      backgroundPosition: "right center ",
+
+      flexDirection: "row-reverse",
+      height: "50rem",
+      paddingBottom: 0,
     },
     [theme.breakpoints.up("lg")]: {
       height: "65rem",
       width: "95%",
-      marginLeft: "5%"
-
+      marginLeft: "5%",
     },
   },
   photoContainer: {
@@ -81,8 +83,8 @@ const styles = (theme) => ({
     [theme.breakpoints.up("md")]: {
       marginTop: "-10rem",
       textAlign: "left",
-      marginLeft: "4rem"
-  },
+      marginLeft: "4rem",
+    },
   },
   lines: {
     display: "none",
@@ -104,7 +106,7 @@ const styles = (theme) => ({
       marginLeft: 0,
       paddingBottom: "5rem",
       width: "20%",
-    }
+    },
   },
   title: {
     padding: "1rem 0 2rem 0",

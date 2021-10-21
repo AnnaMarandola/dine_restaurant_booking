@@ -20,7 +20,6 @@ const styles = (theme) => ({
     [theme.breakpoints.up("md")]: {
       flexDirection: "row",
       height: "50rem",
-
     },
     [theme.breakpoints.up("lg")]: {
       height: "60rem",
