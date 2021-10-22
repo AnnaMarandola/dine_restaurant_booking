@@ -46,12 +46,11 @@ const theme = createTheme({
       // },
     },
     h3: {
-      fontSize: "14px",
+      fontSize: "12px",
       textTransform: "uppercase",
+      fontWeight: 600,
       "@media (min-width:600px)": {
-        fontWeight: 600,
-        textTransform: "none",
-        fontSize: "28px",
+        fontSize: "14px",
       },
     },
     body1: {
