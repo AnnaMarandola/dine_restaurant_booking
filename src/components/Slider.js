@@ -1,10 +1,9 @@
 import { withStyles } from "@mui/styles";
+import { useState, useEffect } from "react";
 import LINES from "../assets/patterns/pattern-lines.svg";
 import TOPRIGHT from "../assets/patterns/pattern-curve-top-right.svg";
-import MOBILEFAMILY from "../assets/homepage/family-gathering-mobile@2x.jpg";
-import TABLETFAMILY from "../assets/homepage/family-gathering-tablet.jpg";
-import DESKTOPFAMILY from "../assets/homepage/family-gathering-desktop.jpg";
 import { Typography } from "@mui/material";
+import { slides } from "../components/data";
 
 const styles = (theme) => ({
   root: {
@@ -125,7 +124,9 @@ const styles = (theme) => ({
     "&:hover": {
       color: theme.palette.primary.beaver,
     },
-
+    [theme.breakpoints.up("md")]: {
+      width: "20rem",
+    },
   },
   divider: {
     width: "50%",
@@ -138,11 +139,6 @@ const styles = (theme) => ({
       marginRight: "1rem",
       marginLeft: "-2rem",
       height: "2px",
-    },
-  },
-  menuText: {
-    [theme.breakpoints.up("md")]: {
-      width: "20rem",
     },
   },
   bookingButton: {
@@ -168,50 +164,58 @@ const styles = (theme) => ({
 });
 
 const Slider = ({ classes }) => {
+  const [index, setIndex] = useState(0);
+  const [selectedSlide, setSelected] = useState();
+  const [slide, setSlide] = useState(slides[index]);
+
+  console.log("slide", slide);
+  useEffect(() => {
+    if (selectedSlide) {
+      setSlide(slides[index]);
+    }
+  }, [selectedSlide, index]);
+
+  const handleSlide = (e) => {
+    setIndex(e.target.id);
+    setSelected(slides[index]);
+  };
   return (
     <div className={classes.root}>
       <div className={classes.photoContainer}>
         <img src={LINES} alt="decorative lines" className={classes.lines} />
         <img
-          srcSet={`${MOBILEFAMILY} 600w, ${TABLETFAMILY} 900w, ${DESKTOPFAMILY} 1200w`}
+          srcSet={`${slide.mobile} 600w, ${slide.tablet} 900w, ${slide.desktop} 1200w`}
           sizes="(max-width: 500px) 100vw, (max-width: 800px) 100vw,  (max-width: 1100px) 100vw"
-          src={MOBILEFAMILY}
+          src={slide.mobile}
           alt="family gathering"
           className={classes.picture}
         />
       </div>
+
       <div className={classes.textContainer}>
         <div className={classes.texts}>
           <Typography variant="h2" className={classes.title}>
-            Family Gathering
+            {slide.title}
           </Typography>
           <Typography variant="body1" className={classes.description}>
-            {" "}
-            We love catering for entire families. So please bring everyone along
-            for a special meal with your loved ones. We’ll provide a memorable
-            experience for all.
+            {slide.description}
           </Typography>
           <button className={classes.bookingButton}>Book a table</button>
         </div>
         <div className={classes.menu}>
-          <div className={classes.menuItem}>
-            <Typography variant="h3" className={classes.menuText}>
-              Family Gathering
-            </Typography>
-            <div className={classes.divider} />
-          </div>
-          <div className={classes.menuItem}>
-            <Typography variant="h3" className={classes.menuText}>
-              Special Events
-            </Typography>
-            <div className={classes.divider} />
-          </div>
-          <div className={classes.menuItem}>
-            <Typography variant="h3" className={classes.menuText}>
-              Social Events
-            </Typography>
-            <div className={classes.divider} />
-          </div>
+          {slides.map((slide, id) => (
+            <div className={classes.menuItem} key={id}>
+              <Typography
+                variant="h3"
+                className={classes.menuText}
+                id={id}
+                onClick={handleSlide}
+              >
+                {slide.title}
+              </Typography>
+              <div className={classes.divider} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

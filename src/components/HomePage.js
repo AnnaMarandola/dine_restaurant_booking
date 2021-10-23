@@ -1,4 +1,5 @@
 import { withStyles } from "@mui/styles";
+import Banner from "./Banner";
 import EnjoyablePlace from "./EnjoyablePlace";
 import Hero from "./Hero";
 import LocalFood from "./LocalFood";
@@ -17,6 +18,7 @@ const HomePage = ({ classes }) => {
       <LocalFood />
       <Menu />
       <Slider />
+      <Banner />
     </div>
   );
 };
