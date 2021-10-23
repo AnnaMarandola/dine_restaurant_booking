@@ -1,6 +1,7 @@
 import { withStyles } from "@mui/styles";
 import Banner from "./Banner";
 import EnjoyablePlace from "./EnjoyablePlace";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import LocalFood from "./LocalFood";
 import Menu from "./Menu";
@@ -19,6 +20,7 @@ const HomePage = ({ classes }) => {
       <Menu />
       <Slider />
       <Banner />
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,7 @@
-import { Typography } from "@mui/material";
 import { withStyles } from "@mui/styles";
+import { Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
+
 import MOBILEREADY from "../assets/homepage/ready-bg-mobile.jpg";
 import TABLETREADY from "../assets/homepage/ready-bg-tablet.jpg";
 import DESKTOPREADY from "../assets/homepage/ready-bg-desktop.jpg";
@@ -46,8 +48,9 @@ const styles = (theme) => ({
     padding: "1.3rem 3rem",
     textTransform: "uppercase",
     "&:hover": {
-      backgroundColor: theme.palette.secondary.mirage,
+      backgroundColor: "black",
       backgroundolor: "white",
+      border: "1px solid black",
     },
     [theme.breakpoints.up("sm")]: {
       marginTop: "1rem",
@@ -65,7 +68,9 @@ const Banner = ({ classes }) => {
       <Typography variant="h2" className={classes.text}>
         Ready to make a reservation?
       </Typography>
-      <button className={classes.bookingButton}>Book a table</button>
+      <NavLink to="/booking">
+        <button className={classes.bookingButton}>Book a table</button>
+      </NavLink>
     </div>
   );
 };

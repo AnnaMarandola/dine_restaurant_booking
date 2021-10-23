@@ -1,9 +1,11 @@
 import { withStyles } from "@mui/styles";
 import { useState, useEffect } from "react";
-import LINES from "../assets/patterns/pattern-lines.svg";
-import TOPRIGHT from "../assets/patterns/pattern-curve-top-right.svg";
 import { Typography } from "@mui/material";
 import { slides } from "../components/data";
+import { NavLink } from "react-router-dom";
+import LINES from "../assets/patterns/pattern-lines.svg";
+import TOPRIGHT from "../assets/patterns/pattern-curve-top-right.svg";
+
 
 const styles = (theme) => ({
   root: {
@@ -200,7 +202,9 @@ const Slider = ({ classes }) => {
           <Typography variant="body1" className={classes.description}>
             {slide.description}
           </Typography>
-          <button className={classes.bookingButton}>Book a table</button>
+          <NavLink to="/booking">
+            <button className={classes.bookingButton}>Book a table</button>
+          </NavLink>
         </div>
         <div className={classes.menu}>
           {slides.map((slide, id) => (
