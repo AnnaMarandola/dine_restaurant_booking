@@ -3,6 +3,9 @@ import { withStyles } from "@mui/styles";
 
 const styles = (theme) => ({
   root: {
+    position: "relative",
+    width: "100%",
+    bottom: 0,
     backgroundColor: theme.palette.primary.main,
     color: "white",
     display: "flex",
@@ -13,7 +16,6 @@ const styles = (theme) => ({
       flexDirection: "row",
       justifyContent: "space-around",
       alignItems: "flex-start",
-
     },
     [theme.breakpoints.up("lg")]: {
       padding: "6rem 0"
@@ -22,6 +24,7 @@ const styles = (theme) => ({
   logoContainer: {
     padding: "1rem 0",
     [theme.breakpoints.up("sm")]: {
+      paddingLeft: "2rem"
     }
   },
   contactContainer: {

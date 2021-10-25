@@ -1,7 +1,7 @@
 import { withStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
 import MenuItems from "./MenuItems";
-import DIVIDER from "../assets/patterns/pattern-divide.svg";
+import DIVIDER from "../../assets/patterns/pattern-divide.svg";
 
 const styles = (theme) => ({
   root: {

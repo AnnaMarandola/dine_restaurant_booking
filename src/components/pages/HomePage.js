@@ -1,11 +1,11 @@
 import { withStyles } from "@mui/styles";
-import Banner from "./Banner";
-import EnjoyablePlace from "./EnjoyablePlace";
-import Footer from "./Footer";
-import Hero from "./Hero";
-import LocalFood from "./LocalFood";
-import Menu from "./Menu";
-import Slider from "./Slider";
+import Banner from "../home/Banner";
+import EnjoyablePlace from "../home/EnjoyablePlace";
+import Footer from "../home/Footer";
+import Hero from "../home/Hero";
+import LocalFood from "../home/LocalFood";
+import Menu from "../home/Menu";
+import Slider from "../home/Slider";
 
 const styles = (theme) => ({
   root: {},

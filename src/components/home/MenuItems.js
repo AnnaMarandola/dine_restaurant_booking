@@ -1,14 +1,6 @@
 import { withStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
-import SALMONMOBILE from "../assets/homepage/salmon-mobile.jpg";
-import SALMONTABLET from "../assets/homepage/salmon-desktop-tablet.jpg";
-import SALMONDESKTOP from "../assets/homepage/salmon-mobile@2x.jpg";
-import CHOCOMOBILE from "../assets/homepage/chocolate-mobile.jpg";
-import CHOCOTABLET from "../assets/homepage/chocolate-desktop-tablet.jpg";
-import CHOCODESKTOP from "../assets/homepage/chocolate-desktop-tablet@2x.jpg";
-import BEEFMOBILE from "../assets/homepage/beef-mobile.jpg";
-import BEEFTABLET from "../assets/homepage/beef-desktop-tablet.jpg";
-import BEEFDESKTOP from "../assets/homepage/beef-desktop-tablet@2x.jpg";
+import {menuItems} from "../data";
 
 const styles = (theme) => ({
   root: {
@@ -17,11 +9,9 @@ const styles = (theme) => ({
     display: "flex",
     flexDirection: "column",
     [theme.breakpoints.up("md")]: {
-      // marginLeft: "2rem"
     },
     [theme.breakpoints.up("lg")]: {
       width: "80%",
-      // marginLeft: "22%",
     },
   },
   menuItem: {
@@ -71,32 +61,6 @@ const styles = (theme) => ({
   },
 });
 
-const menuItems = [
-  {
-    title: "Seared Salmon Fillet",
-    description:
-      "Our locally sourced salmon served with a refreshing buckwheat summer salad.",
-    mobile: SALMONMOBILE,
-    tablet: SALMONTABLET,
-    desktop: SALMONDESKTOP,
-  },
-  {
-    title: "Rosemary Filet Mignon",
-    description:
-      "Our prime beef served to your taste with a delicious choice of seasonal sides.",
-    mobile: BEEFMOBILE,
-    tablet: BEEFTABLET,
-    desktop: BEEFDESKTOP,
-  },
-  {
-    title: " Summer Fruit Chocolate Mousse",
-    description:
-      "Creamy mousse combined with summer fruits and dark chocolate shavings.",
-    mobile: CHOCOMOBILE,
-    tablet: CHOCOTABLET,
-    desktop: CHOCODESKTOP,
-  },
-];
 
 const MenuItems = ({ classes }) => {
   return (

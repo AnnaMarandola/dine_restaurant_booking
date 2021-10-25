@@ -1,9 +1,9 @@
 import { Typography } from "@mui/material";
 import { withStyles } from "@mui/styles";
-import MOBILEHERO from "../assets/homepage/hero-bg-mobile.jpg";
-import TABLETHERO from "../assets/homepage/hero-bg-tablet.jpg";
-import DESKTOPHERO from "../assets/homepage/hero-bg-desktop.jpg";
 import { NavLink } from "react-router-dom";
+import MOBILEHERO from "../../assets/homepage/hero-bg-mobile.jpg";
+import TABLETHERO from "../../assets/homepage/hero-bg-tablet.jpg";
+import DESKTOPHERO from "../../assets/homepage/hero-bg-desktop.jpg";
 
 const styles = (theme) => ({
   root: {

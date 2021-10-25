@@ -1,11 +1,12 @@
 import { Typography } from "@mui/material";
 import { withStyles } from "@mui/styles";
-import DIVIDER from "../assets/patterns/pattern-divide.svg";
-import LINES from "../assets/patterns/pattern-lines.svg";
-import MOBILEFOOD from "../assets/homepage/locally-sourced-mobile.jpg";
-import TABLETFOOD from "../assets/homepage/locally-sourced-tablet.jpg";
-import DESKTOPFOOD from "../assets/homepage/locally-sourced-desktop.jpg";
-import TOPLEFT from "../assets/patterns/pattern-curve-top-left.svg";
+import DIVIDER from "../../assets/patterns/pattern-divide.svg";
+import LINES from "../../assets/patterns/pattern-lines.svg";
+import MOBILEFOOD from "../../assets/homepage/locally-sourced-mobile.jpg";
+import TABLETFOOD from "../../assets/homepage/locally-sourced-tablet.jpg";
+import DESKTOPFOOD from "../../assets/homepage/locally-sourced-desktop.jpg";
+import TOPLEFT from "../../assets/patterns/pattern-curve-top-left.svg";
+
 const styles = (theme) => ({
   root: {
     display: "flex",

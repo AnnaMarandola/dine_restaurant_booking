@@ -1,10 +1,10 @@
 import { withStyles } from "@mui/styles";
 import { useState, useEffect } from "react";
 import { Typography } from "@mui/material";
-import { slides } from "../components/data";
+import { slides } from "../data";
 import { NavLink } from "react-router-dom";
-import LINES from "../assets/patterns/pattern-lines.svg";
-import TOPRIGHT from "../assets/patterns/pattern-curve-top-right.svg";
+import LINES from "../../assets/patterns/pattern-lines.svg";
+import TOPRIGHT from "../../assets/patterns/pattern-curve-top-right.svg";
 
 
 const styles = (theme) => ({

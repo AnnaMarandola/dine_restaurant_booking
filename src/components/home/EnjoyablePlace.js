@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
 import { withStyles } from "@mui/styles";
-import TOPRIGHT from "../assets/patterns/pattern-curve-top-right.svg";
-import DIVIDER from "../assets/patterns/pattern-divide.svg";
-import MOBILELANDSCAPE from "../assets/homepage/enjoyable-place-mobile.jpg";
-import TABLETLANDSCAPE from "../assets/homepage/enjoyable-place-tablet.jpg";
-import DESKTOPLANDSCAPE from "../assets/homepage/enjoyable-place-desktop.jpg";
+import TOPRIGHT from "../../assets/patterns/pattern-curve-top-right.svg";
+import DIVIDER from "../../assets/patterns/pattern-divide.svg";
+import MOBILELANDSCAPE from "../../assets/homepage/enjoyable-place-mobile.jpg";
+import TABLETLANDSCAPE from "../../assets/homepage/enjoyable-place-tablet.jpg";
+import DESKTOPLANDSCAPE from "../../assets/homepage/enjoyable-place-desktop.jpg";
 
 const styles = (theme) => ({
   root: {

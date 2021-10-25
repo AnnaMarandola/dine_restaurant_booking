@@ -1,6 +1,6 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import BookingPage from './components/BookingPage';
-import HomePage from "./components/HomePage";
+import BookingPage from './components/pages/BookingPage';
+import HomePage from "./components/pages/HomePage";
 
 
 function App() {
