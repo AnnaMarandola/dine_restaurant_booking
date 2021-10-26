@@ -21,62 +21,50 @@ const theme = createTheme({
   typography: {
     fontFamily: "Spartan",
     h1: {
-      fontSize: "34px",
+      fontSize: "2rem",
       "@media (min-width:600px)": {
-        fontSize: "50px",
+        fontSize: "3rem",
       },
       "@media (min-width:900px)": {
-        fontSize: "50px",
+        fontSize: "3.5rem",
       },
       "@media (min-width:1100px)": {
-        fontSize: "72px",
+        fontSize: "4rem",
       },
     },
     h2: {
-      fontSize: "30px",
+      fontSize: "1.5rem",
       fontWeight: 700,
       "@media (min-width:600px)": {
-        fontSize: "35px",
+        fontSize: "2rem",
       },
       "@media (min-width:900px)": {
-        fontSize: "40px",
+        fontSize: "3rem",
       },
-      // "@media (min-width:1100px)": {
-      //   fontSize: "56px",
-      // },
     },
     h3: {
-      fontSize: "12px",
+      fontSize: "1rem",
       textTransform: "uppercase",
       fontWeight: 600,
-      "@media (min-width:600px)": {
-        fontSize: "14px",
-      },
     },
     body1: {
-      fontSize: "16px",
+      fontSize: "1rem",
       "@media (min-width:600px)": {
-        fontSize: "20px",
-      },
-      "@media (min-width:900px)": {
-        fontSize: "20px",
+        fontSize: "1.5rem",
       },
       "@media (min-width:1200px)": {
-        fontSize: "20px",
+        fontSize: "1.5rem",
       },
 
     },
     body2: {
-      fontSize: "18px",
+      fontSize: "1.2rem",
       fontWeight: 700,
       "@media (min-width:600px)": {
-        fontSize: "22px",
-      },
-      "@media (min-width:900px)": {
-        fontSize: "22px",
+        fontSize: "1.7",
       },
       "@media (min-width:1200px)": {
-        fontSize: "22px",
+        fontSize: "1.5rem",
       },
     },
   },
