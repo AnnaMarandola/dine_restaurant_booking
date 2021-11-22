@@ -51,11 +51,12 @@ const styles = (theme) => ({
     flexDirection: "column",
     justifyContent: "space-between",
     boxShadow: "0px 52px 60px -15px #c4c4c4",
-
     backgroundColor: "white",
-    padding: "4rem",
+    padding: "2rem",
+    height: "30rem",
     [theme.breakpoints.up("lg")]: {
       height: "40rem",
+      padding: "4rem",
     },
   },
 
