@@ -1,7 +1,6 @@
 import { withStyles } from "@mui/styles";
 import { Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
-
 import MOBILEREADY from "../../assets/homepage/ready-bg-mobile.jpg";
 import TABLETREADY from "../../assets/homepage/ready-bg-tablet.jpg";
 import DESKTOPREADY from "../../assets/homepage/ready-bg-desktop.jpg";
